@@ -11,7 +11,7 @@ vue中的props是单向绑定的，父组件的属性变化时会传递给子组
 
 3. 深拷贝数组或对象
 对象或数组的简单赋值，修改新值也会改变原值。这时我们需要获取原值的深拷贝对象。
-对于对象，可以通过newObj = JSON.parse(JSON.stringfy(obj))实现。
+对于对象，可以通过newObj = JSON.parse(JSON.stringify(obj))实现。
 对于数组，可以通过 newArr = […arr]或者newArr = arr.slice(0)来实现。
 
 4. 给组件增加独有样式
